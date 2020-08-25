@@ -8,8 +8,11 @@ using System.Text;
 
 namespace Shop.Data.EntityFramework
 {
-    class ShopDbContext : DbContext
+    public class ShopDbContext : DbContext
     {
+        public ShopDbContext(DbContextOptions options) : base(options)
+        {
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
