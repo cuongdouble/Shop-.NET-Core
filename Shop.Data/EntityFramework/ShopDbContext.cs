@@ -77,6 +77,8 @@ namespace Shop.Data.EntityFramework
 
         public DbSet<Transaction> Transactions { get; set; }
 
+        public DbSet<ProductImage> ProductImages { get; set; }
+
 
     }
 }
